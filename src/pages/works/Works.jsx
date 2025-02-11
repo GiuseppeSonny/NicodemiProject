@@ -13,21 +13,46 @@ const Works = () => {
   };
   return (
     <div className={styles.main}>
-      {/*  <div className={styles.workstext}>
+      <div className={styles.workstext}>
         <h2>Prodotti</h2>
-      </div> */}
+      </div>
 
-      <div className={styles.product1}>
-        <h3>Olio E.V.O.</h3>
-        <p>Prezzo: €10</p>
+      <div className={styles.productsContainer}>
+        <div className={styles.productCard}>
+          <img
+            src="https://source.unsplash.com/200x200/?olive-oil"
+            alt="Olio E.V.O."
+            className={styles.productImage}
+          />
+          <h3>Olio in Vetro</h3>
+          <p>Prezzo: €10</p>
 
-        <label>Quantità:</label>
-        <input
-          type="number"
-          min="1"
-          value={quantity}
-          onChange={(e) => setQuantity(e.target.value)}
-        />
+          <label>Quantità:</label>
+          <input
+            type="number"
+            min="1"
+            value={quantity.vetro}
+            onChange={(e) => handleQuantityChange(e.target.value)}
+          />
+        </div>
+
+        <div className={styles.productCard}>
+          <img
+            src="https://source.unsplash.com/200x200/?olive-oil"
+            alt="Miele Bio"
+            className={styles.productImage}
+          />
+          <h3>Olio in latte</h3>
+          <p>Prezzo: €8</p>
+
+          <label>Quantità:</label>
+          <input
+            type="number"
+            min="1"
+            value={quantity.latte}
+            onChange={(e) => handleQuantityChange(e.target.value)}
+          />
+        </div>
       </div>
     </div>
   );
