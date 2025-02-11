@@ -65,7 +65,7 @@ const Works = () => {
             type="number"
             min="1"
             value={quantity.vetro}
-            onChange={(e) => handleQuantityChange(e.target.value)}
+            onChange={(e) => handleChange(e.target.value)}
           />
         </div>
 
@@ -83,7 +83,7 @@ const Works = () => {
             type="number"
             min="1"
             value={quantity.latte}
-            onChange={(e) => handleQuantityChange(e.target.value)}
+            onChange={(e) => handleChange(e.target.value)}
           />
           <form onSubmit={handleSubmit} className="order-form">
             <h3>Inserisci i tuoi dati</h3>
