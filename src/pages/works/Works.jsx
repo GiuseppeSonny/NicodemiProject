@@ -39,7 +39,7 @@ const Works = () => {
         <div className={styles.productCard}>
           <img
             src="https://source.unsplash.com/200x200/?olive-oil"
-            alt="Miele Bio"
+            alt="olio Bio"
             className={styles.productImage}
           />
           <h3>Olio in latte</h3>
