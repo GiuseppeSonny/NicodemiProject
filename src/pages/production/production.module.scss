@@ -1,0 +1,18 @@
+@import "../../assets/variables.scss";
+
+.title {
+  text-align: center;
+  padding-top: 40px;
+  color: $color-title;
+  font-size: $font-size-title;
+}
+
+.paragraph {
+  text-align: center;
+  padding: 16px;
+  font-size: $font-size-paragraph;
+}
+
+.lineHeight {
+  line-height: 3rem;
+}

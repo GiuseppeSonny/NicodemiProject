@@ -9,5 +9,5 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background-color: rgb(234, 243, 201);
+  background: linear-gradient(180deg, #e6dcc7 0%, #faf3e0 50%, #fdfbf1 100%);
 }
