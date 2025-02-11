@@ -1,25 +1,58 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import { useState } from "react";
 import styles from "./works.module.scss";
 
 const Works = () => {
+  const [quantity, setQuantity] = useState(1);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    address: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
   return (
     <div className={styles.main}>
       <div className={styles.workstext}>
-        <h2>My Work</h2>
+        <h2>Prodotti</h2>
       </div>
-      <div className={styles.works}>
-        <ul>
-          <li>
-            <a href="https://example.com/project1">Project 1</a>
-          </li>
-          <li>
-            <a href="https://example.com/project2">Project 2</a>
-          </li>
-          <li>
-            <a href="https://example.com/project3">Project 3</a>
-          </li>
-        </ul>
+
+      <div className={styles.productsContainer}>
+        <div className={styles.productCard}>
+          <img
+            src="https://source.unsplash.com/200x200/?olive-oil"
+            alt="Olio E.V.O."
+            className={styles.productImage}
+          />
+          <h3>Olio in Vetro</h3>
+          <p>Prezzo: €10</p>
+
+          <label>Quantità:</label>
+          <input
+            type="number"
+            min="1"
+            value={quantity.vetro}
+            onChange={(e) => setQuantity(e.target.value)}
+          />
+        </div>
+
+        <div className={styles.productCard}>
+          <img
+            src="https://source.unsplash.com/200x200/?olive-oil"
+            alt="Miele Bio"
+            className={styles.productImage}
+          />
+          <h3>Olio in latte</h3>
+          <p>Prezzo: €8</p>
+
+          <label>Quantità:</label>
+          <input
+            type="number"
+            min="1"
+            value={quantity.latte}
+            onChange={(e) => setQuantity(e.target.value)}
+          />
+        </div>
       </div>
     </div>
   );
