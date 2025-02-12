@@ -16,3 +16,26 @@
 .lineHeight {
   line-height: 3rem;
 }
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.imgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  max-width: 40vw;
+}
+
+.imgWrapper img {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
