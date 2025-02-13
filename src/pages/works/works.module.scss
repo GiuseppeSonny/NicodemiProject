@@ -1,3 +1,5 @@
+@import "../../assets/variables.scss";
+
 .main {
   max-width: 900px;
   margin: auto;
@@ -14,6 +16,8 @@
 .productsContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -54,14 +58,22 @@ label {
 }
 
 p {
-  font-size: 1rem;
+  font-size: $font-size-paragraph;
   color: #555;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #222;
+}
+
+.dashedline {
+  border: none;
+  border-top: 2px dashed #000000;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .orderform {

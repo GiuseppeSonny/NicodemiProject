@@ -47,18 +47,23 @@ const Works = () => {
   return (
     <div className={styles.main}>
       <div className={styles.workstext}>
-        <h2>Prodotti</h2>
+        <h2>Shop</h2>
+        <p>Olio extra vergine di oliva estratto in Italia da olive coltivate in Italia.
+        <br />
+        Olio d'oliva di categoria superiore ottenuto direttamente dalle olive e <br />
+        unicamente mediate prodotti meccanici. <br /> 
+        </p>
       </div>
 
       <div className={styles.productsContainer}>
         <div className={styles.productCard}>
           <img
             src="src\assets\images\olio-piccolo.jpg"
-            alt="Olio E.V.O."
+            alt="Olio piccolo"
             className={styles.productImage}
           />
-          <h3>Olio in Vetro</h3>
-          <p>Prezzo: €10</p>
+          <h3>Bottiglia Olio Extra<br/>Vergine di Oliva<br/>Formato 0,5L</h3>
+          <p>Prezzo: 15€</p>
 
           <label>Quantità:</label>
           <input
@@ -73,11 +78,11 @@ const Works = () => {
         <div className={styles.productCard}>
           <img
             src="src/assets/images/olio-grande.jpg"
-            alt="olio Bio"
+            alt="olio grande"
             className={styles.productImage}
           />
-          <h3>Olio in Latta</h3>
-          <p>Prezzo: €8</p>
+          <h3>Latta Olio Extra<br/>Vergine di Oliva<br/>Formato 3L</h3>
+          <p>Prezzo: 50€</p>
 
           <label>Quantità:</label>
           <input
@@ -89,6 +94,9 @@ const Works = () => {
           />
         </div>
       </div>
+
+      <hr className={styles.dashedline}/>
+
       <form onSubmit={handleSubmit} className={styles.orderform}>
         <h3>Inserisci i tuoi dati</h3>
 
