@@ -85,36 +85,22 @@ const Works = () => {
             value={quantity.latte}
             onChange={(e) => setQuantity(e.target.value)}
           />
-          <form onSubmit={handleSubmit} className="order-form">
-            <h3>Inserisci i tuoi dati</h3>
-
-            <label>Nome:</label>
-            <input type="text" name="name" required onChange={handleChange} />
-
-            <label>Email:</label>
-            <input type="email" name="email" required onChange={handleChange} />
-
-            <label>Indirizzo:</label>
-            <textarea name="address" required onChange={handleChange} />
-
-            <button type="submit">Invia Ordine</button>
-          </form>
         </div>
-        {/*  <form onSubmit={handleSubmit} className="order-form">
-          <h3>Inserisci i tuoi dati</h3>
-
-          <label>Nome:</label>
-          <input type="text" name="name" required onChange={handleChange} />
-
-          <label>Email:</label>
-          <input type="email" name="email" required onChange={handleChange} />
-
-          <label>Indirizzo:</label>
-          <textarea name="address" required onChange={handleChange} />
-
-          <button type="submit">Invia Ordine</button>
-        </form> */}
       </div>
+      <form onSubmit={handleSubmit} className="order-form">
+        <h3>Inserisci i tuoi dati</h3>
+
+        <label>Nome:</label>
+        <input type="text" name="name" required onChange={handleChange} />
+
+        <label>Email:</label>
+        <input type="email" name="email" required onChange={handleChange} />
+
+        <label>Indirizzo:</label>
+        <textarea name="address" required onChange={handleChange} />
+
+        <button type="submit">Invia Ordine</button>
+      </form>
     </div>
   );
 };
