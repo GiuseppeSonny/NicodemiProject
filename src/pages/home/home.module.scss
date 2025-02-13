@@ -1,0 +1,27 @@
+@import "../../assets/variables.scss";
+
+.titleHome {
+  text-align: center;
+  padding-top: 40px;
+  color: $color-title;
+  font-size: $font-size-title;
+}
+
+.paragraphHome {
+  text-align: center;
+  padding: 16px;
+  font-size: $font-size-paragraph;
+}
+
+.imgHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paragraphs{
+    padding: 20px;
+    text-align: center;
+    font-size: $font-size-paragraph;
+}
