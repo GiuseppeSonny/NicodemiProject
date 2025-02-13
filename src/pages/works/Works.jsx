@@ -30,6 +30,7 @@ const Works = () => {
         emailData,
         "YOUR_USER_ID" // Sostituisci con il tuo User ID
       )
+
       .then((response) => {
         alert("Il tuo ordine è stato inviato correttamente!");
         setFormData({
@@ -38,6 +39,7 @@ const Works = () => {
           address: "",
         });
         setQuantity(1);
+
         error;
         {
           alert("Si è verificato un errore durante l'invio dell'ordine.");
@@ -91,7 +93,7 @@ const Works = () => {
         <h3>Inserisci i tuoi dati</h3>
 
         <label>Nome:</label>
-        <input type="text" name="name" required onChange={handleChange} />
+        <input  type="text" name="name" required onChange={handleChange} />
 
         <label>Email:</label>
         <input type="email" name="email" required onChange={handleChange} />
