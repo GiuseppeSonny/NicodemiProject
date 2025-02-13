@@ -38,7 +38,7 @@
   margin-bottom: 10px;
 }
 
-input {
+.quantityInput {
   width: 60px;
   padding: 5px;
   margin-top: 5px;
@@ -69,14 +69,14 @@ h3 {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  border: 1px solid red;
+
 }
 
 input,
 textarea {
   margin-bottom: 10px;
   padding: 8px;
-  border: 1px solid #5b70e3;
+
   border-radius: 5px;
 }
 

@@ -62,6 +62,7 @@ const Works = () => {
 
           <label>Quantità:</label>
           <input
+            className={styles.quantityInput}
             type="number"
             min="1"
             value={quantity.vetro}
@@ -80,6 +81,7 @@ const Works = () => {
 
           <label>Quantità:</label>
           <input
+            className={styles.quantityInput}
             type="number"
             min="1"
             value={quantity.latte}
