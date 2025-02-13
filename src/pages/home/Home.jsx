@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./home.module.scss";
 
 const Home = () => {
   return (
-    <div className={styles.homeContainer}>
-      <h1>LA NOSTRA STORIA</h1>
+    <div>
+      <h1 className={styles.titolo}>LA NOSTRA STORIA</h1>
       <p>
         La presenza della famiglia Nicodemi sul territorio del comune di Monte
         Roberto, secondo quanto tramandato, risale al 1500. Certamente nel 1731
@@ -12,18 +13,13 @@ const Home = () => {
       <img
         src="src\assets\images\la-nostra-storia.jpg"
         alt="la nostra storia"
-        className={styles.imageStory}
       />
       <p>
         Successivamente nel 1835 il Catasto Gregoriano, il primo catasto
         particellare dello Stato Pontificio, assegna alla Famiglia Nicodemi
         parte dei campi attualmente coltivati.
       </p>
-      <img
-        src="src\assets\images\territorio.jpg"
-        alt="il nostro territorio"
-        className={styles.imageTerritory}
-      />
+      <img src="src\assets\images\territorio.jpg" alt="il nostro territorio" />
       <p>
         Ulteriori appezzamenti sono stati aggiunti nel corso degli anni ‘60.
       </p>
