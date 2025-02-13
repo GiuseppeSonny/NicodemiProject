@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./works.module.scss";
 
 const Works = () => {
@@ -65,7 +65,7 @@ const Works = () => {
             type="number"
             min="1"
             value={quantity.vetro}
-            onChange={(e) => handleQuantityChange(e.target.value)}
+            onChange={(e) => setQuantity(e.target.value)}
           />
         </div>
 
@@ -83,7 +83,7 @@ const Works = () => {
             type="number"
             min="1"
             value={quantity.latte}
-            onChange={(e) => handleQuantityChange(e.target.value)}
+            onChange={(e) => setQuantity(e.target.value)}
           />
           <form onSubmit={handleSubmit} className="order-form">
             <h3>Inserisci i tuoi dati</h3>
