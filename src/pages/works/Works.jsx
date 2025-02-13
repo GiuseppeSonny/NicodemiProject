@@ -87,7 +87,7 @@ const Works = () => {
           />
         </div>
       </div>
-      <form onSubmit={handleSubmit} className="order-form">
+      <form onSubmit={handleSubmit} className={styles.orderform}>
         <h3>Inserisci i tuoi dati</h3>
 
         <label>Nome:</label>
