@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./works.module.scss";
+import styles from "./shop.module.scss";
 
-const Works = () => {
+const Shop = () => {
   const [quantity, setQuantity] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
@@ -48,7 +48,7 @@ const Works = () => {
   };
   return (
     <div className={styles.main}>
-      <div className={styles.workstext}>
+      <div className={styles.shoptext}>
         <h2>Shop</h2>
         <p>Olio extra vergine di oliva estratto in Italia da olive coltivate in Italia.
         <br />
@@ -117,4 +117,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Shop;

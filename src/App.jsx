@@ -4,7 +4,7 @@ import Header from "./componets/Header/Header";
 import Footer from "./componets/Header/footer/Footer";
 import Production from "./pages/production/Production";
 import Contacts from "./pages/contacts/Contacts";
-import Works from "./pages/works/Works";
+import Shop from "./pages/shop/Shop";
 import Home from "./pages/home/Home";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/production" exact element={<Production />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/works" element={<Works />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </div>
         <Footer />
