@@ -7,6 +7,8 @@ const Shop = () => {
     name: "",
     email: "",
     address: "",
+    product:"",
+    quantity: 1,
   });
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -37,6 +39,8 @@ const Shop = () => {
           name: "",
           email: "",
           address: "",
+          product: "",
+          quantity: "",
         });
         setQuantity(1);
 
