@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./works.module.scss";
+import styles from "./shop.module.scss";
 
-const Works = () => {
+const Shop = () => {
   const [quantity, setQuantity] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
@@ -48,11 +48,11 @@ const Works = () => {
   };
   return (
     <div className={styles.main}>
-      <div className={styles.workstext}>
-        <h2>Shop</h2>
-        <p>Olio extra vergine di oliva estratto in Italia da olive coltivate in Italia.
+      <div className={styles.shoptext}>
+        <h2>SHOP</h2>
+        <p className={styles.paragraph}>Olio extra vergine di oliva estratto in Italia da olive coltivate in Italia.
         <br />
-        Olio d'oliva di categoria superiore ottenuto direttamente dalle olive e <br />
+        Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive e <br />
         unicamente mediate prodotti meccanici. <br /> 
         </p>
       </div>
@@ -117,4 +117,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Shop;

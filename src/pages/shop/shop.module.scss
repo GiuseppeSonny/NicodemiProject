@@ -7,15 +7,27 @@
   text-align: center;
 }
 
-.workstext h2 {
+.shoptext h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #333;
 }
 
+// .title{
+//   padding-top: 40px;
+//   color: $color-title;
+//   font-size: $font-size-title;
+// }
+
+.paragraph {
+  text-align: center;
+  padding: 16px;
+  font-size: $font-size-paragraph;
+  color: $color-paragraph;
+}
+
 .productsContainer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -23,6 +35,9 @@
 }
 
 .productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +96,6 @@ h3 {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-
 }
 
 input,
@@ -89,7 +103,6 @@ textarea {
   display: block;
   margin-bottom: 10px;
   padding: 8px;
-
   border-radius: 5px;
 }
 
