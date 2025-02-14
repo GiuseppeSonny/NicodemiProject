@@ -17,7 +17,11 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/production" exact element={<Production />} />
             <Route path="/contacts" element={<Contacts />} />
+<<<<<<< HEAD
             <Route path="/shop" element={<Shop/>} />
+=======
+            <Route path="/shop" element={<Shop />} />
+>>>>>>> 7e18e16a9e336b24a3ef07ecbbdc0fb08cefb8b7
           </Routes>
         </div>
         <Footer />

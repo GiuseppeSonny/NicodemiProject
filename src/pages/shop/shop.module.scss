@@ -10,7 +10,7 @@
 .shoptext h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: $color-title;
 }
 
 // .title{
@@ -61,7 +61,7 @@
   width: 60px;
   padding: 5px;
   margin-top: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 5px;
   text-align: center;
 }

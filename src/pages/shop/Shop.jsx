@@ -71,7 +71,7 @@ const Shop = () => {
           <input
             className={styles.quantityInput}
             type="number"
-            min="1"
+            min="0"
             value={quantity.vetro}
             onChange={(e) => setQuantity(e.target.value)}
           />
@@ -90,7 +90,7 @@ const Shop = () => {
           <input
             className={styles.quantityInput}
             type="number"
-            min="1"
+            min="0"
             value={quantity.latte}
             onChange={(e) => setQuantity(e.target.value)}
           />
