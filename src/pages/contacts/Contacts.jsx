@@ -1,13 +1,14 @@
 import React from "react";
+import styles from "./contacts.module.scss";
 
 const Contacts = () => {
   return (
-    <div>
-      <h1>Contact Information</h1>
-      <ul>
-        <li>Name: John Doe</li>
-        <li>Email: johndoe@example.com</li>
-        <li>Phone: 123-456-7890</li>
+    <div className={styles.main}>
+      <h1 className={styles.title}>I Nostri Contatti</h1>
+      <ul className={styles.list}>
+        <li>Nicodemi Azienda Agricola</li>
+        <li>aanicodemi@gmail.com</li>
+        <li>123-456-7890</li>
       </ul>
     </div>
   );
