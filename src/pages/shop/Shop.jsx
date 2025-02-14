@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./works.module.scss";
+import styles from "./shop.module.scss";
 
-const Works = () => {
+const Shop = () => {
   const [quantity, setQuantity] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
@@ -71,7 +71,7 @@ const Works = () => {
           <input
             className={styles.quantityInput}
             type="number"
-            min="1"
+            min="0"
             value={quantity.vetro}
             onChange={(e) => setQuantity(e.target.value)}
           />
@@ -90,7 +90,7 @@ const Works = () => {
           <input
             className={styles.quantityInput}
             type="number"
-            min="1"
+            min="0"
             value={quantity.latte}
             onChange={(e) => setQuantity(e.target.value)}
           />
@@ -117,4 +117,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Shop;
