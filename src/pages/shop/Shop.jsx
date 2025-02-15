@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";

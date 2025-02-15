@@ -56,7 +56,7 @@ const Production = () => {
       <p className={styles.paragraph}>
         Al fine di ottenere la massima qualità del prodotto finito, è stato
         selezionato il frantoio Chiodi, ubicato a soli <br />5 km dai campi.
-        <br /> <br />
+        <br /> 
         Una volta giunte al frantoio, le olive vengono in un primo momento
         defogliate e lavate per poi essere <br /> frante tramite frangitura a
         martelli doppia griglia con velocità di lavoro pari a 1400 giri/minuto.
