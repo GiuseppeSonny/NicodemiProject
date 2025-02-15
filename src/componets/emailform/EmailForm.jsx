@@ -1,5 +1,6 @@
+import React from "react";
 import { useState } from "react";
-/* import emailjs from "emailjs-com"; */
+import emailjs from "emailjs-com";
 
 const EmailForm = ({ quantity }) => {
   const [formData, setFormData] = useState({
@@ -12,7 +13,7 @@ const EmailForm = ({ quantity }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     // Dati da inviare a EmailJS
@@ -25,20 +26,27 @@ const EmailForm = ({ quantity }) => {
     };
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
-      .then(() => {
-        alert("Il tuo ordine è stato inviato con successo!");
-        setFormData({ name: "", email: "", address: "" });
-      })
-      .catch(() => {
-        alert("Si è verificato un errore nell'invio dell'ordine.");
-      });
+      .send(
+        "process.env.REACT_APP_SERVICE_ID",
+        "process.env.REACT_APP_TEMPLATE_ID",
+        emailData,
+        "process.env.REACT_APP_PUBLIC_KEY"
+      )
+      .then(
+        (response) => {
+          alert("Il tuo ordine è stato inviato con successo!");
+          setFormData({ name: "", email: "", address: "" });
+        },
+        (error) => {
+          alert("Si è verificato un errore nell'invio dell'ordine.");
+        }
+      );
 
     e.target.reset();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={sendEmail}>
       <h3>Inserisci i tuoi dati</h3>
 
       <label>Nome:</label>
