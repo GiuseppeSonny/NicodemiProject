@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./componets/Header/Header";
@@ -17,7 +18,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/production" exact element={<Production />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/shop" element={<Shop/>} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </div>
         <Footer />
