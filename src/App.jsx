@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className='imgContainer'></div>
         <Header />
         <div className="routes">
           <Routes>

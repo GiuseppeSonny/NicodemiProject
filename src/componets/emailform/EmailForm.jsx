@@ -22,8 +22,8 @@ const EmailForm = ({ quantity }) => {
       user_name: formData.name,
       user_email: formData.email,
       user_address: formData.address,
-      bottle_qty: quantity.glass,
-      can_qty: quantity.milk,
+      bottle_qty: quantity.vetro,
+      can_qty: quantity.latte,
     };
 
     emailjs
@@ -60,10 +60,10 @@ const EmailForm = ({ quantity }) => {
       <textarea name="address" required onChange={handleChange} />
 
       <label>Bottiglia 0,5L:</label>
-      <input type="number" name="bottle_qty" value={quantity.glass} readOnly />
+      <input type="number" name="bottle_qty" value={quantity.vetro} readOnly />
 
       <label>Latta 3L:</label>
-      <input type="number" name="can_qty" value={quantity.milk} readOnly />
+      <input type="number" name="can_qty" value={quantity.latte} readOnly />
 
       <button type="submit">Invia Ordine</button>
     </form>
