@@ -159,7 +159,7 @@ const EmailForm = ({ quantity }) => {
       <input type="number" name="bottle_qty" value={quantity.vetro} readOnly />
 
       <label>Latta 3L:</label>
-      <input type="number" name="can_qty" value={quantity.latte} readOnly />
+      <input type="number" name="can_qty" value={quantity.latta} readOnly />
 
       <button type="submit">Invia Ordine</button>
     </form>
