@@ -5,7 +5,7 @@ import EmailForm from "../../componets/emailform/EmailForm.jsx";
 
 const Shop = () => {
   // Stato per la quantità dei prodotti
-  const [quantity, setQuantity] = useState({ vetro: 0, latte: 0 });
+  const [quantity, setQuantity] = useState({ vetro: 0, latta: 0 });
 
   return (
     <div className={styles.main}>
@@ -71,9 +71,9 @@ const Shop = () => {
             className={styles.quantityInput}
             type="number"
             min="0"
-            value={quantity.latte}
+            value={quantity.latta}
             onChange={(e) =>
-              setQuantity({ ...quantity, latte: parseInt(e.target.value) })
+              setQuantity({ ...quantity, latta: parseInt(e.target.value) })
             }
           />
         </div>
