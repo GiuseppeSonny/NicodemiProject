@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +12,7 @@ body {
   min-height: 100vh;
   margin: 0;
   background: linear-gradient(180deg, #e6dcc7 0%, #faf3e0 50%, #fdfbf1 100%);
+
+  font-family: "Indie Flower";
+  font-weight: 700;
 }

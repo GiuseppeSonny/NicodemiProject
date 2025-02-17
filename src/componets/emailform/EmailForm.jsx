@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
+// eslint-disable-next-line react/prop-types
 const EmailForm = ({ quantity }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -21,8 +22,8 @@ const EmailForm = ({ quantity }) => {
       user_name: formData.name,
       user_email: formData.email,
       user_address: formData.address,
-      bottle_qty: quantity.vetro,
-      can_qty: quantity.latte,
+      bottle_qty: quantity.glass,
+      can_qty: quantity.milk,
     };
 
     emailjs
@@ -59,10 +60,10 @@ const EmailForm = ({ quantity }) => {
       <textarea name="address" required onChange={handleChange} />
 
       <label>Bottiglia 0,5L:</label>
-      <input type="number" name="bottle_qty" value={quantity.vetro} readOnly />
+      <input type="number" name="bottle_qty" value={quantity.glass} readOnly />
 
       <label>Latta 3L:</label>
-      <input type="number" name="can_qty" value={quantity.latte} readOnly />
+      <input type="number" name="can_qty" value={quantity.milk} readOnly />
 
       <button type="submit">Invia Ordine</button>
     </form>
