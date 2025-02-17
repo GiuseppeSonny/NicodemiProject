@@ -41,16 +41,8 @@ const EmailForm = ({ quantity }) => {
       user_email: formData.email,
       user_phone: formData.phone,
       user_address: formData.address,
-<<<<<<< HEAD
       bottle_qty: quantity.vetro,
-      can_qty: quantity.latte,
-=======
-      user_city: formData.city,
-      user_province: formData.province,
-      user_zip: formData.zipCode,
-      user_bottiglia: quantities.bottleQty,
-      user_latta: quantities.canQty,
->>>>>>> baf74808defcd137b36b4c9b6b76e3d9896fcc92
+      can_qty: quantity.latta,
     };
 
     emailjs
@@ -164,22 +156,10 @@ const EmailForm = ({ quantity }) => {
       />
 
       <label>Bottiglia 0,5L:</label>
-<<<<<<< HEAD
       <input type="number" name="bottle_qty" value={quantity.vetro} readOnly />
 
       <label>Latta 3L:</label>
-      <input type="number" name="can_qty" value={quantity.latte} readOnly />
-=======
-      <input
-        type="number"
-        name="bottleQty"
-        value={quantities.bottleQty}
-        readOnly
-      />
-
-      <label>Latta 3L:</label>
-      <input type="number" name="canQty" value={quantities.canQty} readOnly />
->>>>>>> baf74808defcd137b36b4c9b6b76e3d9896fcc92
+      <input type="number" name="can_qty" value={quantity.latta} readOnly />
 
       <button type="submit">Invia Ordine</button>
     </form>
