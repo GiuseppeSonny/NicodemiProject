@@ -42,7 +42,7 @@ const EmailForm = ({ quantity }) => {
       user_phone: formData.phone,
       user_address: formData.address,
       bottle_qty: quantity.vetro,
-      can_qty: quantity.latte,
+      can_qty: quantity.latta,
     };
 
     emailjs
