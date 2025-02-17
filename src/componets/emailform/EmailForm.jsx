@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import styles from "./email.module.scss";
 
 // eslint-disable-next-line react/prop-types
 const EmailForm = ({ quantity }) => {
@@ -83,7 +84,7 @@ const EmailForm = ({ quantity }) => {
   };
 
   return (
-    <form onSubmit={sendEmail}>
+    <form onSubmit={sendEmail} className={styles.form}>
       <h3>Modulo di Acquisto</h3>
 
       <label>Nome:</label>
