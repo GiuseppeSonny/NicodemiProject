@@ -15,7 +15,7 @@ const EmailForm = ({ quantity }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log("dati inviati");
     // Dati da inviare a EmailJS
     const emailData = {
       user_name: formData.name,
@@ -27,10 +27,10 @@ const EmailForm = ({ quantity }) => {
 
     emailjs
       .send(
-        "process.env.REACT_APP_SERVICE_ID",
-        "process.env.REACT_APP_TEMPLATE_ID",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         emailData,
-        "process.env.REACT_APP_PUBLIC_KEY"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (response) => {
