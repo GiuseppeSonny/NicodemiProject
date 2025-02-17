@@ -9,7 +9,7 @@ const Shop = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.workstext}>
+      <div className={styles.shoptext}>
         <h2>Shop</h2>
         <p>
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
