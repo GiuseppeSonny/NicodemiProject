@@ -35,16 +35,6 @@ const EmailForm = ({ quantity }) => {
     e.preventDefault();
     console.log("Dati inviati");
 
-    // const emailData = {
-    //   user_name: formData.name,
-    //   user_surname: formData.surname,
-    //   user_email: formData.email,
-    //   user_phone: formData.phone,
-    //   user_address: formData.address,
-    //   bottle_qty: quantity.vetro,
-    //   can_qty: quantity.latta,
-    // };
-
     const emailData = {
       user_name: formData.name,
       user_surname: formData.surname,
