@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
-import styles from "./email.module.scss";
 
 // eslint-disable-next-line react/prop-types
 const EmailForm = ({ quantity }) => {
@@ -41,8 +40,11 @@ const EmailForm = ({ quantity }) => {
       user_email: formData.email,
       user_phone: formData.phone,
       user_address: formData.address,
-      bottle_qty: quantity.vetro,
-      can_qty: quantity.latta,
+      user_city: formData.city,
+      user_province: formData.province,
+      user_zip: formData.zipCode,
+      user_bottiglia: quantities.bottleQty,
+      user_latta: quantities.canQty,
     };
 
     emailjs
@@ -81,7 +83,7 @@ const EmailForm = ({ quantity }) => {
   };
 
   return (
-    <form onSubmit={sendEmail} className={styles.form}>
+    <form onSubmit={sendEmail}>
       <h3>Modulo di Acquisto</h3>
 
       <label>Nome:</label>
@@ -121,7 +123,8 @@ const EmailForm = ({ quantity }) => {
       />
 
       <label>Indirizzo:</label>
-      <textarea
+      <input
+        type="text"
         name="address"
         value={formData.address}
         required
@@ -156,10 +159,15 @@ const EmailForm = ({ quantity }) => {
       />
 
       <label>Bottiglia 0,5L:</label>
-      <input type="number" name="bottle_qty" value={quantity.vetro} readOnly />
+      <input
+        type="number"
+        name="bottleQty"
+        value={quantities.bottleQty}
+        readOnly
+      />
 
       <label>Latta 3L:</label>
-      <input type="number" name="can_qty" value={quantity.latta} readOnly />
+      <input type="number" name="canQty" value={quantities.canQty} readOnly />
 
       <button type="submit">Invia Ordine</button>
     </form>
