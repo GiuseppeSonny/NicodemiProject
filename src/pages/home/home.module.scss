@@ -5,12 +5,15 @@
   padding-top: 40px;
   color: $color-title;
   font-size: $font-size-title;
+  z-index: 1;
 }
 
 .paragraphHome {
   text-align: center;
   padding: 16px;
   font-size: $font-size-paragraph;
+  color: $color-paragraph;
+  z-index: 1;
 }
 
 .imgHome {
@@ -18,10 +21,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  z-index: 1;
 }
 
-.paragraphs{
-    padding: 20px;
-    text-align: center;
-    font-size: $font-size-paragraph;
+.paragraphs {
+  padding: 20px;
+  text-align: center;
+  font-size: $font-size-paragraph;
+  color: $color-paragraph;
+  z-index: 1;
 }

@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./home.module.scss";
 const Home = () => {
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <h1 className={styles.titleHome}>LA NOSTRA STORIA</h1>
       <p className={styles.paragraphHome}>
         La presenza della famiglia Nicodemi sul territorio del comune di Monte
@@ -37,15 +37,17 @@ const Home = () => {
       <h1 className={styles.titleHome}>IL NOSTRO TERRITORIO</h1>
       <p className={styles.paragraphHome}>
         Monte Roberto è un piccolo borgo sito sulle colline nell’entroterra
-        anconetano. <br /> Assieme ai comuni limitrofi fa parte dei Castelli di Jesi,
-        l’insieme dei comuni della Vallesina che, sin dal <br /> Medioevo, erano
-        assoggettati al Contado di Jesi, città regia per volere dell’Imperatore
-        Federico II di Svevia <br /> che qui nacque il 26 dicembre del 1194. <br /> Nel XV
-        secolo, finita la parentesi imperiale, Jesi e i suoi Castelli tornarono
-        sotto l&apos;egemonia diretta del Papa, <br />mantenendo una posizione di
-        riguardo all&apos;interno dello Stato Pontificio. <br /> Attualmente, Monte
-        Roberto, vanta il riconoscimento di Città dell’olio ed è inserita
-        nell’area di produzione del Verdicchio dei Castelli di Jesi DOP.
+        anconetano. <br /> Assieme ai comuni limitrofi fa parte dei Castelli di
+        Jesi, l’insieme dei comuni della Vallesina che, sin dal <br /> Medioevo,
+        erano assoggettati al Contado di Jesi, città regia per volere
+        dell’Imperatore Federico II di Svevia <br /> che qui nacque il 26
+        dicembre del 1194. <br /> Nel XV secolo, finita la parentesi imperiale,
+        Jesi e i suoi Castelli tornarono sotto l&apos;egemonia diretta del Papa,{" "}
+        <br />
+        mantenendo una posizione di riguardo all&apos;interno dello Stato
+        Pontificio. <br /> Attualmente, Monte Roberto, vanta il riconoscimento
+        di Città dell’olio ed è inserita nell’area di produzione del Verdicchio
+        dei Castelli di Jesi DOP.
       </p>
     </div>
   );
