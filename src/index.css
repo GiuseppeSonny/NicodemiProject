@@ -14,6 +14,7 @@ body {
   background: linear-gradient(180deg, #e6dcc7 0%, #faf3e0 50%, #fdfbf1 100%);
   font-family: "Indie Flower";
   font-weight: 700;
+  padding-top: 150px;
 }
 
 @media (min-width: 768px) {
