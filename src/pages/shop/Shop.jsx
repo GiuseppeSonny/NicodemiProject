@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";
@@ -15,7 +15,7 @@ const Shop = () => {
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
           Italia.
           <br />
-          Olio d'oliva di categoria superiore ottenuto direttamente dalle olive
+          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive
           e <br />
           unicamente mediante processi meccanici. <br />
         </p>
@@ -36,18 +36,19 @@ const Shop = () => {
             <br />
             Formato 0,5L
           </h3>
+          <div className={styles.info}>
           <p>Prezzo: 15€</p>
-
-          <label>Quantità:</label>
-          <input
-            className={styles.quantityInput}
-            type="number"
-            min="0"
-            value={quantity.vetro}
-            onChange={(e) =>
-              setQuantity({ ...quantity, vetro: parseInt(e.target.value) })
-            }
-          />
+            <label>Quantità:</label>
+            <input
+              className={styles.quantityInput}
+              type="number"
+              min="0"
+              value={quantity.vetro}
+              onChange={(e) =>
+                setQuantity({ ...quantity, vetro: parseInt(e.target.value) })
+              }
+            />
+          </div>
         </div>
 
         {/* Prodotto Latta 3L */}
@@ -64,18 +65,19 @@ const Shop = () => {
             <br />
             Formato 3L
           </h3>
+          <div className={styles.info}>
           <p>Prezzo: 50€</p>
-
-          <label>Quantità:</label>
-          <input
-            className={styles.quantityInput}
-            type="number"
-            min="0"
-            value={quantity.latta}
-            onChange={(e) =>
-              setQuantity({ ...quantity, latta: parseInt(e.target.value) })
-            }
-          />
+            <label>Quantità:</label>
+            <input
+              className={styles.quantityInput}
+              type="number"
+              min="0"
+              value={quantity.latta}
+              onChange={(e) =>
+                setQuantity({ ...quantity, latta: parseInt(e.target.value) })
+              }
+            />
+          </div>
         </div>
       </div>
 
