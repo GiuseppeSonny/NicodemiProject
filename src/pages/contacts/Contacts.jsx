@@ -11,7 +11,10 @@ const Contacts = () => {
           Email: <a href="mailto:aanicodemi@gmail.com">aanicodemi@gmail.com</a>
         </p>
         <p>
-          Telefono: <a href="tel:+391234567890">+39 123 456 7890</a>
+          Giorgio Nicodemi: <a href="tel:3357560815">3357560815</a>
+        </p>
+        <p>
+          Francesca Curti: <a href="tel:3487816888">3487816888</a>
         </p>
       </div>
     </div>
