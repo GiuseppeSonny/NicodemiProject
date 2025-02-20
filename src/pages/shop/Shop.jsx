@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";
@@ -15,8 +14,8 @@ const Shop = () => {
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
           Italia.
           <br />
-          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive
-          e <br />
+          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle
+          olive e <br />
           unicamente mediante processi meccanici. <br />
         </p>
       </div>
@@ -29,15 +28,14 @@ const Shop = () => {
             alt="Olio piccolo"
             className={styles.productImage}
           />
-          <h3>
-            Bottiglia Olio Extra
-            <br />
-            Vergine di Oliva
-            <br />
-            Formato 0,5L
-          </h3>
-          <div className={styles.info}>
-          <p>Prezzo: 15€</p>
+          <div className={styles.productInfo}>
+            <h3>
+              Bottiglia Olio <br />
+              Extra Vergine di Oliva
+              <br />
+              Formato 0,5L
+            </h3>
+            <p>Prezzo: 15€</p>
             <label>Quantità:</label>
             <input
               className={styles.quantityInput}
@@ -58,15 +56,14 @@ const Shop = () => {
             alt="Olio grande"
             className={styles.productImage}
           />
-          <h3>
-            Latta Olio Extra
-            <br />
-            Vergine di Oliva
-            <br />
-            Formato 3L
-          </h3>
-          <div className={styles.info}>
-          <p>Prezzo: 50€</p>
+          <div className={styles.productInfo}>
+            <h3>
+              Latta Olio <br />
+              Extra Vergine di Oliva
+              <br />
+              Formato 3L
+            </h3>
+            <p>Prezzo: 50€</p>
             <label>Quantità:</label>
             <input
               className={styles.quantityInput}
