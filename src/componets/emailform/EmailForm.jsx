@@ -45,7 +45,7 @@ const EmailForm = ({ quantity }) => {
       bottle_qty: quantities.vetro || 0,
       can_qty: quantities.latta || 0,
     };
-
+    
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
