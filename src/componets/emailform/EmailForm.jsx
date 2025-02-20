@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import styles from "./email.module.scss";
 
-// eslint-disable-next-line react/prop-types
 const EmailForm = ({ quantity }) => {
   const [formData, setFormData] = useState({
     name: "",
