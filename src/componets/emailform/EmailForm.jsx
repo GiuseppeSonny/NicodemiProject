@@ -21,10 +21,9 @@ const EmailForm = ({ quantity }) => {
   });
 
   useEffect(() => {
-    if (quantity)
     setQuantities({
-      bottleQty: quantity.vetro || 0,
-      canQty: quantity.latta || 0,
+      bottleQty: quantity.vetro,
+      canQty: quantity.latta,
     });
   }, [quantity]);
 
@@ -34,7 +33,6 @@ const EmailForm = ({ quantity }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Dati inviati");
 
     const emailData = {
       user_name: formData.name,
@@ -42,10 +40,13 @@ const EmailForm = ({ quantity }) => {
       user_email: formData.email,
       user_phone: formData.phone,
       user_address: formData.address,
-      bottle_qty: quantities.vetro || 0,
-      can_qty: quantities.latta || 0,
+      user_city: formData.city,
+      user_province: formData.province,
+      user_zip: formData.zipCode,
+      user_bottiglia: quantities.bottleQty,
+      user_latta: quantities.canQty,
     };
-    
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -82,85 +83,101 @@ const EmailForm = ({ quantity }) => {
   };
 
   return (
-    <form onSubmit={sendEmail} className={styles.form}>
+    <form onSubmit={sendEmail}>
       <h3>Modulo di Acquisto</h3>
+      <div className={styles.formContainer}>
+        <div className={styles.column}>
+          <label>Nome:</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Nome:</label>
-      <input
-        type="text"
-        name="name"
-        value={formData.name}
-        required
-        onChange={handleChange}
-      />
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Cognome:</label>
-      <input
-        type="text"
-        name="surname"
-        value={formData.surname}
-        required
-        onChange={handleChange}
-      />
+          <label>Via:</label>
+          <input
+            type="text"
+            name="address"
+            value={formData.address}
+            required
+            onChange={handleChange}
+          />
 
-      <label>N. Telefonico:</label>
-      <input
-        type="tel"
-        name="phone"
-        value={formData.phone}
-        required
-        onChange={handleChange}
-      />
+          <label>Provincia:</label>
+          <input
+            type="text"
+            name="province"
+            value={formData.province}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Email:</label>
-      <input
-        type="email"
-        name="email"
-        value={formData.email}
-        required
-        onChange={handleChange}
-      />
+          <label>Bottiglia 0,5L:</label>
+          <input
+            type="number"
+            name="bottleQty"
+            value={quantities.bottleQty}
+            readOnly
+          />
+        </div>
 
-      <label>Indirizzo:</label>
-      <textarea
-        name="address"
-        value={formData.address}
-        required
-        onChange={handleChange}
-      />
+        <div className={styles.column}>
+          <label>Cognome:</label>
+          <input
+            type="text"
+            name="surname"
+            value={formData.surname}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Città:</label>
-      <input
-        type="text"
-        name="city"
-        value={formData.city}
-        required
-        onChange={handleChange}
-      />
+          <label>N. Telefonico:</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Provincia:</label>
-      <input
-        type="text"
-        name="province"
-        value={formData.province}
-        required
-        onChange={handleChange}
-      />
+          <label>Città:</label>
+          <input
+            type="text"
+            name="city"
+            value={formData.city}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Codice Postale:</label>
-      <input
-        type="tel"
-        name="zipCode"
-        value={formData.zipCode}
-        required
-        onChange={handleChange}
-      />
+          <label>Codice Postale:</label>
+          <input
+            type="tel"
+            name="zipCode"
+            value={formData.zipCode}
+            required
+            onChange={handleChange}
+          />
 
-      <label>Bottiglia 0,5L:</label>
-      <input type="number" name="bottleQty" value={quantities.bottleQty} readOnly />
-
-      <label>Latta 3L:</label>
-      <input type="number" name="canQty" value={quantities.canQty} readOnly />
+          <label>Latta 3L:</label>
+          <input
+            type="number"
+            name="canQty"
+            value={quantities.canQty}
+            readOnly
+          />
+        </div>
+      </div>
 
       <button type="submit">Invia Ordine</button>
     </form>
