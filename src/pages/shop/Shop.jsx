@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";
@@ -15,14 +14,14 @@ const Shop = () => {
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
           Italia.
           <br />
-          Olio d'oliva di categoria superiore ottenuto direttamente dalle olive
+          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive
           e <br />
           unicamente mediante processi meccanici. <br />
         </p>
       </div>
 
       <div className={styles.productsContainer}>
-        {/* Prodotto Bottiglia 0,5L */}
+        Prodotto Bottiglia 0,5L
         <div className={styles.productCard}>
           <img
             src="src/assets/images/olio-piccolo.jpg"
