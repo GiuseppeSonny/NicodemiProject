@@ -28,13 +28,15 @@ const Shop = () => {
             alt="Olio piccolo"
             className={styles.productImage}
           />
-          <div className={styles.productInfo}>
+          <div className={styles.info}>
             <h3>
-              Bottiglia Olio <br />
+              Bottiglia Olio
+              <br />
               Extra Vergine di Oliva
               <br />
               Formato 0,5L
             </h3>
+
             <p>Prezzo: 15€</p>
             <label>Quantità:</label>
             <input
@@ -56,13 +58,15 @@ const Shop = () => {
             alt="Olio grande"
             className={styles.productImage}
           />
-          <div className={styles.productInfo}>
+          <div className={styles.info}>
             <h3>
-              Latta Olio <br />
+              Latta Olio
+              <br />
               Extra Vergine di Oliva
               <br />
               Formato 3L
             </h3>
+
             <p>Prezzo: 50€</p>
             <label>Quantità:</label>
             <input
