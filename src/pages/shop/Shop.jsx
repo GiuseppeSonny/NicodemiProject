@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";
+import olioPiccolo from "../../assets/images/olio-piccolo.jpg";
+import olioGrande from "../../assets/images/olio-grande.jpg";
 
 const Shop = () => {
   // Stato per la quantità dei prodotti
@@ -24,7 +26,7 @@ const Shop = () => {
         {/* Prodotto Bottiglia 0,5L */}
         <div className={styles.productCard}>
           <img
-            src="src/assets/images/olio-piccolo.jpg"
+            src={olioPiccolo}
             alt="Olio piccolo"
             className={styles.productImage}
           />
@@ -54,7 +56,7 @@ const Shop = () => {
         {/* Prodotto Latta 3L */}
         <div className={styles.productCard}>
           <img
-            src="src/assets/images/olio-grande.jpg"
+            src={olioGrande}
             alt="Olio grande"
             className={styles.productImage}
           />

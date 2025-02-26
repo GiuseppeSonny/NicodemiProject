@@ -1,6 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import styles from "./production.module.scss";
+import uliveto from "../../assets/images/uliveto.jpg";
+import raccolta from "../../assets/images/raccolta.jpg";
+import lavorazione from "../../assets/images/lavorazione.jpg";
+import impianto from "../../assets/images/impianto.jpg";
+import attrezzatura from "../../assets/images/attrezzatura.jpg";
+import contenitore from "../../assets/images/contenitore.jpg";
 
 const Production = () => {
   return (
@@ -38,25 +44,15 @@ const Production = () => {
         organolettiche.
       </p>
       <div className={styles.imgContainer}>
-        <img
-          src="/src/assets/images/uliveto.jpg"
-          alt="uliveto"
-          width={250}
-          height={350}
-        />
-        <img
-          src="/src/assets/images/raccolta.jpg"
-          alt="raccolta"
-          width={250}
-          height={350}
-        />
+        <img src={uliveto} alt="uliveto" width={250} height={350} />
+        <img src={raccolta} alt="raccolta" width={250} height={350} />
       </div>
 
       <h1 className={styles.title}>LA MOLITURA</h1>
       <p className={styles.paragraph}>
         Al fine di ottenere la massima qualità del prodotto finito, è stato
         selezionato il frantoio Chiodi, ubicato a soli <br />5 km dai campi.
-        <br /> 
+        <br />
         Una volta giunte al frantoio, le olive vengono in un primo momento
         defogliate e lavate per poi essere <br /> frante tramite frangitura a
         martelli doppia griglia con velocità di lavoro pari a 1400 giri/minuto.
@@ -72,36 +68,16 @@ const Production = () => {
       </p>
       <div className={styles.imgWrapper}>
         <div className={styles.item}>
-          <img
-            src="/src/assets/images/lavorazione.jpg"
-            alt="lavorazione"
-            width={230}
-            height={330}
-          />
+          <img src={lavorazione} alt="lavorazione" width={230} height={330} />
         </div>
         <div className={styles.item}>
-          <img
-            src="/src/assets/images/impianto.jpg"
-            alt="impianto"
-            width={230}
-            height={330}
-          />
+          <img src={impianto} alt="impianto" width={230} height={330} />
         </div>
         <div className={styles.item}>
-          <img
-            src="/src/assets/images/attrezzatura.jpg"
-            alt="attrezzatura"
-            width={230}
-            height={330}
-          />
+          <img src={attrezzatura} alt="attrezzatura" width={230} height={330} />
         </div>
         <div className={styles.item}>
-          <img
-            src="/src/assets/images/contenitore.jpg"
-            alt="contenitore"
-            width={230}
-            height={330}
-          />
+          <img src={contenitore} alt="contenitore" width={230} height={330} />
         </div>
       </div>
     </div>
