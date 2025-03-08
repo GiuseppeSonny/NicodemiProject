@@ -14,7 +14,34 @@ body {
   background: linear-gradient(180deg, #e6dcc7 0%, #faf3e0 50%, #fdfbf1 100%);
   font-family: "Inter";
   font-weight: 700;
-  padding-top: 150px;
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 80px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  h1,
+  h2,
+  p,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 768px) {
