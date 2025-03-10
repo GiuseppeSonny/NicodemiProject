@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./shop.module.scss";
 import EmailForm from "../../componets/emailform/EmailForm.jsx";
+import olioPiccolo from "../../assets/images/olio-piccolo.jpg";
+import olioGrande from "../../assets/images/olio-grande.jpg";
 
 const Shop = () => {
   // Stato per la quantità dei prodotti
@@ -14,8 +16,13 @@ const Shop = () => {
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
           Italia.
           <br />
+<<<<<<< HEAD
           Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive
           e <br />
+=======
+          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle
+          olive e <br />
+>>>>>>> 25eaac6a8606db5578bf24725beca7b8d43566df
           unicamente mediante processi meccanici. <br />
         </p>
       </div>
@@ -24,57 +31,61 @@ const Shop = () => {
         Prodotto Bottiglia 0,5L
         <div className={styles.productCard}>
           <img
-            src="src/assets/images/olio-piccolo.jpg"
+            src={olioPiccolo}
             alt="Olio piccolo"
             className={styles.productImage}
           />
-          <h3>
-            Bottiglia Olio Extra
-            <br />
-            Vergine di Oliva
-            <br />
-            Formato 0,5L
-          </h3>
-          <p>Prezzo: 15€</p>
+          <div className={styles.info}>
+            <h3>
+              Bottiglia Olio
+              <br />
+              Extra Vergine di Oliva
+              <br />
+              Formato 0,5L
+            </h3>
 
-          <label>Quantità:</label>
-          <input
-            className={styles.quantityInput}
-            type="number"
-            min="0"
-            value={quantity.vetro}
-            onChange={(e) =>
-              setQuantity({ ...quantity, vetro: parseInt(e.target.value) })
-            }
-          />
+            <p>Prezzo: 15€</p>
+            <label>Quantità:</label>
+            <input
+              className={styles.quantityInput}
+              type="number"
+              min="0"
+              value={quantity.vetro}
+              onChange={(e) =>
+                setQuantity({ ...quantity, vetro: parseInt(e.target.value) })
+              }
+            />
+          </div>
         </div>
 
         {/* Prodotto Latta 3L */}
         <div className={styles.productCard}>
           <img
-            src="src/assets/images/olio-grande.jpg"
+            src={olioGrande}
             alt="Olio grande"
             className={styles.productImage}
           />
-          <h3>
-            Latta Olio Extra
-            <br />
-            Vergine di Oliva
-            <br />
-            Formato 3L
-          </h3>
-          <p>Prezzo: 50€</p>
+          <div className={styles.info}>
+            <h3>
+              Latta Olio
+              <br />
+              Extra Vergine di Oliva
+              <br />
+              Formato 3L
+            </h3>
 
-          <label>Quantità:</label>
-          <input
-            className={styles.quantityInput}
-            type="number"
-            min="0"
-            value={quantity.latta}
-            onChange={(e) =>
-              setQuantity({ ...quantity, latta: parseInt(e.target.value) })
-            }
-          />
+            <p>Prezzo: 50€</p>
+            <label>Quantità:</label>
+            <input
+              className={styles.quantityInput}
+              type="number"
+              min="0"
+              value={quantity.latta}
+              onChange={(e) =>
+                setQuantity({ ...quantity, latta: parseInt(e.target.value) })
+              }
+            />
+          </div>
         </div>
       </div>
 

@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import styles from "./home.module.scss";
+import nostraStoria from "../../assets/images/la-nostra-storia.jpg";
+import territorio from "../../assets/images/territorio.jpg";
+
 const Home = () => {
   return (
     <div className={styles.mainContainer}>
@@ -13,11 +16,7 @@ const Home = () => {
         Parrocchiale.
       </p>
       <div className={styles.imgHome}>
-        <img
-          src="src\assets\images\la-nostra-storia.jpg"
-          alt="la nostra storia"
-          width={700}
-        />
+        <img src={nostraStoria} alt="la nostra storia" width={700} />
       </div>
       <p className={styles.paragraphs}>
         Successivamente nel 1835 il Catasto Gregoriano, il primo catasto
@@ -25,11 +24,7 @@ const Home = () => {
         Nicodemi parte dei campi attualmente coltivati.
       </p>
       <div className={styles.imgHome}>
-        <img
-          src="src\assets\images\territorio.jpg"
-          alt="il nostro territorio"
-          width={600}
-        />
+        <img src={territorio} alt="il nostro territorio" width={600} />
       </div>
       <p className={styles.paragraphs}>
         Ulteriori appezzamenti sono stati aggiunti nel corso degli anni ‘60.

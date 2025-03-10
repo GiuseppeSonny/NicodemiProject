@@ -5,11 +5,18 @@ const Contacts = () => {
   return (
     <div className={styles.main}>
       <h1 className={styles.title}>I Nostri Contatti</h1>
-      <ul className={styles.list}>
-        <li>Nicodemi Azienda Agricola</li>
-        <li>aanicodemi@gmail.com</li>
-        <li>123-456-7890</li>
-      </ul>
+      <div className={styles.list}>
+        <p>Azienda Agricola Nicodemi</p>
+        <p>
+          Email: <a href="mailto:aanicodemi@gmail.com">aanicodemi@gmail.com</a>
+        </p>
+        <p>
+          Giorgio Nicodemi: <a href="tel:3357560815">3357560815</a>
+        </p>
+        <p>
+          Francesca Curti: <a href="tel:3487816888">3487816888</a>
+        </p>
+      </div>
     </div>
   );
 };

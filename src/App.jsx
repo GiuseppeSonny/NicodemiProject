@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./componets/Header/Header";
-import Footer from "./componets/Header/footer/Footer";
+import Footer from "./componets/footer/Footer";
 import Production from "./pages/production/Production";
 import Contacts from "./pages/contacts/Contacts";
 import Shop from "./pages/shop/Shop";
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className='imgContainer'></div>
+        <div className="imgContainer"></div>
         <Header />
         <div className="routes">
           <Routes>

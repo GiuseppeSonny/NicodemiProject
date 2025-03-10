@@ -1,12 +1,23 @@
 @import "../../assets/variables.scss";
 
 .navbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  background-color: rgba(233, 227, 215, 255);
+  padding: 0px 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 15px;
+
+  .logo {
+    width: 200px;
+    height: 140px;
+  }
 
   .menuList {
     display: flex;
@@ -15,10 +26,11 @@
     gap: 12px;
     list-style: none;
     padding-right: 20px;
-    
 
     a {
-      color:$color-title;
+      color: $color-title;
+      text-decoration: none;
+      font-weight: bold;
     }
   }
 }
@@ -28,3 +40,22 @@
   border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  .menuList {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+}
