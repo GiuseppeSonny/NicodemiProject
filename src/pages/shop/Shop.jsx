@@ -16,13 +16,8 @@ const Shop = () => {
           Olio extra vergine di oliva estratto in Italia da olive coltivate in
           Italia.
           <br />
-<<<<<<< HEAD
-          Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle olive
-          e <br />
-=======
           Olio d&apos;oliva di categoria superiore ottenuto direttamente dalle
           olive e <br />
->>>>>>> 25eaac6a8606db5578bf24725beca7b8d43566df
           unicamente mediante processi meccanici. <br />
         </p>
       </div>
