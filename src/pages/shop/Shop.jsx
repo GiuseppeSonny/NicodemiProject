@@ -23,7 +23,7 @@ const Shop = () => {
       </div>
 
       <div className={styles.productsContainer}>
-        Prodotto Bottiglia 0,5L
+        {/*Prodotto Bottiglia 0,5L */}
         <div className={styles.productCard}>
           <img
             src={olioPiccolo}

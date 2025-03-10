@@ -1,22 +1,20 @@
 @import "../../assets/variables.scss";
 
 .main {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .title {
-    display: flex;
-    text-align: center;
-    padding-top: 40px;
-    color: $color-title;
-    font-size: $font-size-title;
-  }
-
+  display: flex;
+  text-align: center;
+  padding-top: 40px;
+  color: $color-title;
+  font-size: $font-size-title;
+}
 
 .list {
   display: flex;
@@ -26,5 +24,10 @@
   font-size: $font-size-paragraph;
   list-style: none;
   padding: 50px;
+}
 
+@media (max-width: 768px) {
+  .title {
+    padding-top: 80px;
+  }
 }

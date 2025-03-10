@@ -41,21 +41,14 @@
 }
 
 @media (max-width: 768px) {
-  .navbarContainer {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+  .logo{
+    margin-right: 20em;
   }
 
-  .logo {
-    width: 150px;
-    height: auto;
+    .navbarContainer{
+       justify-content: space-between;
+    }
+    
   }
-  .menuList {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 0;
-  }
-}
+  
+

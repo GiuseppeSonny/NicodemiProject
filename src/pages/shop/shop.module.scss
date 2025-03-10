@@ -76,3 +76,21 @@ label {
 .shoptext h2 {
   color: rgb(55, 85, 42);
 }
+
+
+@media (max-width: 768px) {
+ h2 {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  p{
+    padding-top: 10px;
+    text-align: center;
+  }
+
+ .productCard{
+  margin-top: 40px;
+ }
+}
+

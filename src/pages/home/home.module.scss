@@ -31,3 +31,9 @@
   color: $color-paragraph;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .titleHome {
+    padding-top: 80px;
+  }
+}

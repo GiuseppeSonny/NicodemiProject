@@ -41,3 +41,16 @@
   margin-bottom: -10px;
 }
 
+@media (max-width: 768px) {
+  .title {
+    padding-top: 80px;
+  }
+
+  .imgContainer {
+    flex-direction: column;
+  }
+
+  .imgWrapper img {
+    height: 250px;
+  }
+}
